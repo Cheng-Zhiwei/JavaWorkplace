@@ -1,4 +1,4 @@
-package chapter06;
+package chapter05;
 
 public class Person {
 	
@@ -6,8 +6,18 @@ public class Person {
 	private int age;
 	private String address;
 	
+	//构造方法，初始化对象的属性
+	public  Person(String name, int age, String address) {
+		this.name = name;
+		this.age = age;
+		this.address = address;
+	}
+	//默认构造方法
+	public Person() {};
+
+	
 	public void setName(String name) {
-		if(name.length()<0) {
+		if(name.length()<3) {
 			System.out.println("Please input the name");
 			return;
 		} else {
@@ -16,7 +26,7 @@ public class Person {
 	}
 	
 	public void setAge(int age) {
-		if(age>100 && age<0) {
+		if(age>100 || age<0) {
 			System.out.println("The age must be more than 0 and less than 100！");
 			return;
 		} else {
@@ -45,16 +55,17 @@ public class Person {
 	}
 	
 	public static void main(String[] args) {
-//		Person person1 = new Person();
-//		person1.display(); //打印出默认值
+		Person person1 = new Person();
 		
-		Person person2 = new Person();
-//		person2.setName("Jack");
+		person1.display(); //打印出默认值
+		
+		
+		Person person2 = new Person("jack", 20, "Wasnton");
+//		person2.setName("ja");
 //		person2.setAddress("America");
 //		person2.setAge(600);
-		person2.setAge(600); //没有出现验证的效果？？？？
-//		person2.display();
-		
+		person2.display();
+
 	}
 
 	}
