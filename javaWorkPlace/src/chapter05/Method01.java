@@ -1,6 +1,9 @@
 package chapter05;
 
+
+
 public class Method01 {
+	 private int a = 0;
 	
 	public double  area(double r) {
 		return Math.PI*Math.pow(r,2);

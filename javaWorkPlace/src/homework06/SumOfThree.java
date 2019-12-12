@@ -13,6 +13,8 @@ public class SumOfThree {
 //			i++;
 //		}
 //		System.out.println(sum);
+
+
 		int sum = 0;
 		int tem ;
 		for (int i = 1;i <= 200;i++){

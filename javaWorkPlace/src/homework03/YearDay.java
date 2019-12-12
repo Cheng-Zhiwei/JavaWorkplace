@@ -4,8 +4,7 @@ import java.util.Scanner;
 public class YearDay {
 	public static void main(String[] args) {
 	
-		Scanner scanner=new Scanner(System.in);
-		System.out.print("Enter the number of minutes:");
+		Scanner scanner = new Scanner(System.in);
 		int mintues=scanner.nextInt();
 
 		int days=mintues/60/24;

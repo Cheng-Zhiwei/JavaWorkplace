@@ -8,21 +8,31 @@ public class ScoreDegree {
 		System.out.print("Please input the name and score:");
 		String name = inputData.next();
 		int score = inputData.nextInt();
+		String  degree;
 
-		
 		if(score>=90) {
-	
-			System.out.println(name+"同学的成绩为优秀！");
+			
+			degree = "优秀";
 		} else if  (score>=80) {
-			System.out.println(name+"同学的成绩为良好！");
+			degree = "良好";
 		} else if  (score>=70) {
-			System.out.println(name+"同学的成绩为中等！");
+			degree = "中等";
 		}  else if (score>=60) {
-			System.out.println(name+"同学的成绩为合格！");
+			degree = "合格";
 		} else {
-			System.out.println(name+"同学的成绩为不合格！");
+			degree = "不合格";
 		}
-				
+		System.out.println(name+"同学的成绩为"+degree+"！");
+		
+		for(int i=0; i<5; i++) {
+	
+			for(int j=0; j<7; j++) {
+				int a = 2;
+			}
+		}
+		
+		
+		
 		inputData.close();
 	}
 }

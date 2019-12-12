@@ -44,16 +44,14 @@ public class YangHui {
 		System.out.print("Please input the rows of YangHuiMat:");
 		int n = inputData.nextInt();
 	
-		int[][] mat = new int[n][];
+		int[][] mat = new int[n][]; //定义一个指定行二维数组，列数未初始化
 		
 		for(int i=0; i<n; i++) {
-			mat[i] = new int[i+1]; //这里mat[i]为一个已经声明了但没有开辟空间的一维数组
-		}
-		
-		for(int i=0; i<n; i++) {
+			mat[i] = new int[i+1];
 			mat[i][0] =1;
-			mat[i][mat[i].length-1] =1;
+			mat[i][mat[i].length-1] =1;//这里mat[i]为一个已经声明了但没有开辟空间的一维数组
 		}
+		
 		
 		for(int i=2; i<n; i++) {
 			for(int j=1; j<i; j++) {
